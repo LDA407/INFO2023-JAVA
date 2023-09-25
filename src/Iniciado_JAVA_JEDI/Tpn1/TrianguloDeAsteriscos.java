@@ -1,3 +1,5 @@
+package Iniciado_JAVA_JEDI.Tpn1;
+
 public class TrianguloDeAsteriscos {
     /**
      * Se le solicita que creen un programa que imprima un triángulo de asteriscos
