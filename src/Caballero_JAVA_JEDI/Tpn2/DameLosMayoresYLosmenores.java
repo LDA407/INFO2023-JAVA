@@ -2,7 +2,7 @@ package Caballero_JAVA_JEDI.Tpn2;
 
 import java.util.*;
 
-public class DameLosMayoresYLosmenores {
+public class DameLosMayoresYLosMenores {
   /*
    * Realizar un programa donde se guarden 5 en un arreglo. Luego, el programa
    * debe mostrar en pantalla el valor máximo y mínimo de los números ingresados.
