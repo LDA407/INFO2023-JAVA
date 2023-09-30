@@ -9,7 +9,7 @@ public class CalculoDeDivisibilidad {
   int a = 2;
   int b = 4;
 
-  public void main() {
+  public void suma() {
     System.out.println(String.format("La suam de 2 y 4 es igual a %c", ( a + b)));
   }
 
