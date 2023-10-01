@@ -14,11 +14,7 @@ public class ConversionDeBitcoinsADolares {
 
   public void conversion() {
     System.out.println(
-      String.format(
-        "Tus %s equivalen a %d$.",
-        this.bitcoins,
-        dolares
-      )
+      String.format("Tus %s equivalen a %d$.", this.bitcoins, this.dolares)
     );
   }
 }

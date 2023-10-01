@@ -9,4 +9,5 @@ public class TriangleOfAsterisks {
             System.out.println(triangle_of_asterisks);
         }
     }
+
 }
