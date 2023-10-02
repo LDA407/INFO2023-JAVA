@@ -1,5 +1,6 @@
 package Caballero_JAVA_JEDI.Tpn1;
 
+import java.util.Scanner;
 
 public class ConversionDeDolaresAPesos {
   /*
@@ -13,6 +14,18 @@ public class ConversionDeDolaresAPesos {
   public static void printer(String a, float b, float c) {
     System.out.println(String.format(a, b, c));
   }
+
+  public static void dolares_a_pesos(String[] args) {
+        final double tasaCambio = 20.0; // 1 dólar = 20 pesos
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese la cantidad en dólares: ");
+        double dolares = scanner.nextDouble();
+
+        double dolaresAPesos = dolares * tasaCambio;
+        System.out.printf("El equivalente en pesos es: %.2f pesos", dolaresAPesos);
+
+        scanner.close();
+    }
 
   public static void dolarOficial() {
     float dolarOficial = (float) 348.25;
