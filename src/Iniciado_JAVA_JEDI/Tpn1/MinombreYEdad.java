@@ -7,16 +7,9 @@ public class MinombreYEdad {
      * siguiente formato: “Mi nombre es “ {Nombre} “Mi edad es” {Edad}
      */
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Ingrese su nombre y apellido: ");
-        String nombreApellido = scanner.nextLine();
-
-        System.out.print("Ingrese su edad: ");
-        int edad = scanner.nextInt();
-
-        scanner.close();
+    public static void miNombreYEdad(String[] args) {
+        String nombreApellido = "David Lencina";
+        int edad = 28;
 
         System.out.println("Mi nombre es " + nombreApellido + " y mi edad es " + edad + " años.");
     }
