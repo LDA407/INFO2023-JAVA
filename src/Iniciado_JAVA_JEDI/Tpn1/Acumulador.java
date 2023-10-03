@@ -51,7 +51,8 @@ public class Acumulador {
         switch (i <= n ? 1 : 0) {
             case 1:
                 double resultado = Numero1 * Numero2 / (double) i;
-                return resultado + acumulacion_de_multiplicaciones(Numero1, Numero2, i + 1, n);
+                i += 1;//se incrementa el valor de i a mas 1
+                return resultado + acumulacion_de_multiplicaciones(Numero1, Numero2, i, n);
             default:
                 return 0;
         }
