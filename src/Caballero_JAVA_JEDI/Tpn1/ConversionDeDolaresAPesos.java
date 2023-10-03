@@ -15,7 +15,7 @@ public class ConversionDeDolaresAPesos {
     System.out.println(String.format(a, b, c));
   }
 
-  public static void dolares_a_pesos(String[] args) {
+  public static void dolares_a_pesos() {
         final double tasaCambio = 20.0; // 1 dólar = 20 pesos
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese la cantidad en dólares: ");
