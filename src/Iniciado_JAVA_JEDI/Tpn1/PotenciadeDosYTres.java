@@ -6,11 +6,20 @@ public class PotenciadeDosYTres {
      * potencia de ese número al cuadrado y al cubo.
      */
 
-    // public static void main(String[] args) {
-    //     double cuadrado = Math.pow(numero, 2);
-    //     double cubo = Math.pow(numero, 3);
+    public static void printer(String a, double b) {
+        System.out.println(String.format(a, b));
+    }
 
-    //     System.out.println("El número elevado al cuadrado es: " + cuadrado);
-    //     System.out.println("El número elevado al cubo es: " + cubo);
-    // }
+    public static void alCuadrado(int n) {
+        printer("El número elevado al cuadrado es %.2f", (double)Math.pow(n, 2));
+    }
+
+    public static void alCubo(int n) {
+        printer("El número elevado al cubo es %.2f", (double)Math.pow(n, 3));
+    }
+
+    public static void main(String[] args) {
+        alCuadrado(5);
+        alCubo(4);
+    }
 }
