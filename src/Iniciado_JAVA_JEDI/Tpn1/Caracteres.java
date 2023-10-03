@@ -7,16 +7,16 @@ public class Caracteres {
    */
 
   public static void main(String[] args) {
-    char letra1 = 'T';
-    char letra2 = 'o';
-    char letra3 = 'm';
-    char letra4 = 'á';
-    char letra5 = 's';
+    char a = 'D';
+    char b = 'A';
+    char c = 'V';
+    char d = 'I';
+    char e = 'D';
 
-    System.out.print(letra1);
-    System.out.print(letra2);
-    System.out.print(letra3);
-    System.out.print(letra4);
-    System.out.println(letra5);
+    System.out.print(a);
+    System.out.print(b);
+    System.out.print(c);
+    System.out.print(d);
+    System.out.println(e);
   }
 }
