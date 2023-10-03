@@ -12,8 +12,7 @@ public class SumaDeDosNumerosBis {
 		int numUno = 10;
 		int numDos = 2;
 
-		System.out.println("El resultado de la suma es " + (numUno + numDos)
-				+ " Y su paridad es  : "
-				+ (((((numUno + numDos) % 2) == 0)) ? "Par" : "Impar"));
+		System.out.print("El resultado de la suma es " + (numUno + numDos));
+		System.out.print(" Y su paridad es  : " + (((((numUno + numDos) % 2) == 0)) ? "Par" : "Impar"));
 	}
 }
