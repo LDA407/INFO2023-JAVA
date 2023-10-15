@@ -1,9 +1,8 @@
-package MaestroJavaJedi.trabajoPractico3.tienda;
-
-import java.util.List;
-import java.util.Map;
+package MaestroJavaJedi.trabajoPractico3;
 
 import IniciadoJavaJedi.trabajoPractico3.Persona;
+
+import java.util.Map;
 
 public class Cliente extends Persona {
     private String direccion;
@@ -37,5 +36,28 @@ public class Cliente extends Persona {
 
     public void setProductosAdquiridos(Map<Integer, Producto> a) {
         this.productosAdquiridos = a;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder c = new StringBuilder();
+
+        c.append("Cliente: {");
+        c.append(" Nombre: ").append(super.getNombre());
+        c.append(", Apellido: ").append(super.getApellido());
+        c.append(", Edad: ").append(super.getEdad());
+        c.append(", Dirección: ").append(this.direccion);
+        //c.append(", Productos adquiridos :").append(this.productosAdquiridos);
+        c.append("}");
+
+        return c.toString();
+    }
+
+    public String verProductosAdquiridos(){
+        StringBuilder c = new StringBuilder();
+
+        c.append("Productos adquiridos: ").append(this.productosAdquiridos);
+
+        return c.toString();
     }
 }

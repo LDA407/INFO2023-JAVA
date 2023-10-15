@@ -1,6 +1,7 @@
-package MaestroJavaJedi.trabajoPractico3.tienda;
+package MaestroJavaJedi.trabajoPractico3;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -31,9 +32,7 @@ public class Tienda {
         return productosDisponibles;
     }
 
-    public void setProductosDisponibles(
-            Map<Integer, Producto> productosDisponibles
-        ) {
+    public void setProductosDisponibles(Map<Integer, Producto> productosDisponibles) {
         this.productosDisponibles = productosDisponibles;
     }
 
@@ -55,6 +54,17 @@ public class Tienda {
         };
 
         return b;
+    }
 
+    public Map<String, String> verProductosVendidos() {
+        Map<String, String> b = new HashMap<>();
+
+        for (Cliente a: getListaClientes().values()) {
+            if (a.getProductosAdquiridos() != null) {
+                b.put(a.getNombre(), a.getProductosAdquiridos().toString());
+            }
+        };
+
+        return b;
     }
 }
