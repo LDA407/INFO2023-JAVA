@@ -32,24 +32,20 @@ public void eliminar(String a) {
     }
 }
 
-    public void buscar(String a) {
-        List<Contacto> contactosEncontrados = new ArrayList<Contacto>();
-
-        for (Contacto b: contactos) {
-            if (b.getNombre().equals(a)) {
-                contactosEncontrados.add(b);
-            }
-        }
-
-        for (Contacto j: contactosEncontrados) {
-            System.out.println("Los contatcos encontrados son: ");
-            System.out.println(j.toString());
-        }
+public void buscar(String a) {
+    List<Contacto> f = contactos.stream()
+            .filter(b -> b.getNombre().equalsIgnoreCase(a))
+            .collect(Collectors.toList());
+    
+    if (!f.isEmpty()) {
+        System.out.println("Los contactos encontrados son:");
+        f.forEach(System.out::println);
+    } else {
+        System.out.println("No se encontraron contactos con el nombre especificado.");
     }
+}
 
-    public void mostratListaDeContactos() {
-        for (Contacto a: contactos) {
-            System.out.println(a.toString());
-        }
-    }
+public void mostrarListaDeContactos() {
+    contactos.forEach(System.out::println);
+}
 }
