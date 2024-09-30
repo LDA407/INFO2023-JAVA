@@ -20,21 +20,17 @@ public class AgendaDeContactos {
         contactos.add(a);
         printer("Se agrego el contacto %s.", a);
     }
-
-    public void eliminar(String a) {
-        Contacto c = null;
-
-        for (Contacto b: contactos) {
-            if (b.getNombre().equals(a)) {c = b; break;}
-        }
-
-        if (c != null) {
-            contactos.remove(c);
-            printer("Se eliminó el contacto %s.", c);
-        } else {
-            System.out.println("No se encontró un contacto con el nombre especificado.");
-        }
+    
+public void eliminar(String a) {
+    Contacto c = contactos.stream().filter(b -> b.getNombre().equalsIgnoreCase(a)).findFirst().orElse(null);
+    
+    if (c != null) {
+        contactos.remove(c);
+        System.out.println("Se eliminó el contacto");
+    } else {
+        System.out.println("No se encontró un contacto con el nombre especificado.");
     }
+}
 
     public void buscar(String a) {
         List<Contacto> contactosEncontrados = new ArrayList<Contacto>();
