@@ -12,6 +12,11 @@ public class Tienda {
     public Tienda() {
     }
 
+    public Tienda() {
+    listaClientes = new HashMap<>();
+    productosDisponibles = new HashMap<>();
+}
+
     public Tienda(
             Map<Integer, Cliente> listaClientes,
             Map<Integer, Producto> productosDisponibles)
