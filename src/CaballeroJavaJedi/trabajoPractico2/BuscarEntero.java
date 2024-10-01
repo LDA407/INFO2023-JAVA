@@ -12,9 +12,13 @@ public class BuscarEntero {
 	encontró.
 	 */
 	public static List<Integer> a = Arrays.asList(1765,982,4344,44,576);
+ 
 
-	public static void buscar_entero(int n) {
-		List<Integer> b = new ArrayList<>(a);
-		System.out.println(b.contains(n));
-	}
+    public static void buscarEntero(int n) {
+        if (a.contains(n)) {
+            System.out.println("Encontré el entero " + n);
+        } else {
+            System.out.println("No encontré el entero " + n);
+        }
+    }
 }
