@@ -8,20 +8,16 @@ public class Contador {
      */
 
     public static void main(String[] args) {
-        int n = 1;
-        contador(n);
+        System.out.println("Iniciando conteo...");
+        contador(1);
     }
 
     public static void contador(int n) {
-        switch (n) {
-            case 20:
-                System.out.println("El conteo ha llegado a 20");
-                break;
-            default:
-                n += 1;// con cada iteración se incrementa el valor de i a mas 1
-                System.out.println("Número: " + n);
-                contador(n);
-                break;
+        if (n <= 20) {
+            System.out.println("Número: " + n);
+            contador(n + 1); // Incrementa "n" en cada llamada recursiva
+        } else {
+            System.out.println("El conteo ha llegado a 20");
         }
     }
 }
