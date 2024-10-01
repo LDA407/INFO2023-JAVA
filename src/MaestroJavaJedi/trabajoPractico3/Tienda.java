@@ -37,34 +37,36 @@ public class Tienda {
     }
 
     public List<String> showClients() {
-        List<String> b = new ArrayList<>();
-
-        for (Cliente a: getListaClientes().values()) {
-            b.add(a.toString());
-        };
-
-        return b;
+        return getListaClientes().values().stream()
+                .map(Cliente::toString)
+                .collect(Collectors.toList());
     }
 
     public List<String> showProducts() {
-        List<String> b = new ArrayList<>();
-
-        for (Producto a: getProductosDisponibles().values()) {
-            b.add(a.toString());
-        };
-
-        return b;
+        return getProductosDisponibles().values().stream()
+                .map(Producto::toString)
+                .collect(Collectors.toList());
     }
 
     public Map<String, String> verProductosVendidos() {
-        Map<String, String> b = new HashMap<>();
+        return getListaClientes().values().stream()
+                .filter(a -> a.getProductosAdquiridos() != null)
+                .collect(Collectors.toMap(Cliente::getNombre, a -> a.getProductosAdquiridos().toString()))
+    }
 
-        for (Cliente a: getListaClientes().values()) {
-            if (a.getProductosAdquiridos() != null) {
-                b.put(a.getNombre(), a.getProductosAdquiridos().toString());
-            }
-        };
+    public void agregarCliente(Cliente cliente) {
+        getListaClientes().put(cliente.getId(), cliente);
+    }
 
-        return b;
+    public void eliminarCliente(int id) {
+        getListaClientes().remove(id);
+    }
+
+    public void agregarProducto(Producto producto) {
+        getProductosDisponibles().put(producto.getId(), producto);
+    }
+
+    public void eliminarProducto(int id) {
+        getProductosDisponibles().remove(id);
     }
 }
