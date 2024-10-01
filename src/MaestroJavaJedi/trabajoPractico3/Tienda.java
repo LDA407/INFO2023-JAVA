@@ -60,16 +60,24 @@ public class Tienda {
     }
 
     public void agregarCliente(Cliente cliente) {
+    if (!getListaClientes().containsKey(cliente.getId())) {
         getListaClientes().put(cliente.getId(), cliente);
+    } else {
+        throw new RuntimeException("Cliente con ID " + cliente.getId() + " ya existe");
     }
+}
 
     public void eliminarCliente(int id) {
         getListaClientes().remove(id);
     }
 
     public void agregarProducto(Producto producto) {
+    if (!getProductosDisponibles().containsKey(producto.getId())) {
         getProductosDisponibles().put(producto.getId(), producto);
+    } else {
+        throw new RuntimeException("Producto con ID " + producto.getId() + " ya existe");
     }
+}
 
     public void eliminarProducto(int id) {
         getProductosDisponibles().remove(id);
