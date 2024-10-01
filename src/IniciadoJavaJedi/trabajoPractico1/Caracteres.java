@@ -7,16 +7,9 @@ public class Caracteres {
    */
 
   public static void main(String[] args) {
-    char a = 'D';
-    char b = 'A';
-    char c = 'V';
-    char d = 'I';
-    char e = 'D';
-
-    System.out.print(a);
-    System.out.print(b);
+    char[] nombre = {'D', 'A', 'V', 'I', 'D'};
+for (char c : nombre) {
     System.out.print(c);
-    System.out.print(d);
-    System.out.println(e);
+}
   }
 }
