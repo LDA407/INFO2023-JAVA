@@ -6,20 +6,21 @@ public class MyScanner {
     public static int getInt(String mensaje) {
         System.out.print(mensaje);
         int valor = scanner.nextInt();
+        scanner.close()
         return valor;
     }
 
     public static double getDouble(String mensaje) {
         System.out.print(mensaje);
         double valor = scanner.nextDouble();
+        scanner.close()
         return valor;
     }
 
     public static String getString(String mensaje) {
         System.out.print(mensaje);
-        return scanner.next();
-    }
-    public static void closeScanner() {
-        scanner.close();
+        String valor = scanner.nextLine();
+        scanner.close()
+        return valor
     }
 }
