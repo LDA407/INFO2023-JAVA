@@ -23,8 +23,8 @@
     },
     "Caballero JAVA JEDI": {
         "Buscar entero": "Dado un arreglo con valores enteros, realice la búsqueda de ese entero, si encontró el entero mostrarlo por pantalla sino muestre por pantalla que no lo encontró.",
-        "Dame los mayores y losmenores": "Realizar un programa donde se guarden 5 en un arreglo. Luego, el programa debe mostrar en pantalla el valor máximo y mínimo de los números ingresados.",
-        "Su edad y elmayor": "Guarda en un arreglo una N cantidad de amigos, itere sobre esa cantidad mostrando el nombre de cada amigo si y sólo si este amigo es mayor de edad, en caso de ser menor de edad imprima un mensaje diciendole a ese amigo porque no lo muestra por pantalla. Pero a su vez, encuentre al amigo que mayor edad tenga, muestre un mensaje por pantalla del nombre de esa persona y su edad.",
+        "Dame los mayores y los menores": "Realizar un programa donde se guarden 5 en un arreglo. Luego, el programa debe mostrar en pantalla el valor máximo y mínimo de los números ingresados.",
+        "Su edad y el mayor": "Guarda en un arreglo una N cantidad de amigos, itere sobre esa cantidad mostrando el nombre de cada amigo si y sólo si este amigo es mayor de edad, en caso de ser menor de edad imprima un mensaje diciendole a ese amigo porque no lo muestra por pantalla. Pero a su vez, encuentre al amigo que mayor edad tenga, muestre un mensaje por pantalla del nombre de esa persona y su edad.",
         "Ordenarlo todo": "Realizar un programa que guarde cierta cantidad de números con punto decimal en un arreglo. Luego, el programa debe ordenar los números de forma ascendente y mostrarlos en pantalla.",
         "prohibido menores a ceros": "Cree dos arreglos con números decimales, luego recortarlos y reste ambos arreglos el resultado aplicarlos a un tercer arreglo, si la resta da negativo entonces guarde 0."
     },
